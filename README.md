@@ -1,1 +1,8 @@
 # IOS-Mini-ATM-App
+This app simulates an expanded automated teller machine (ATM). The app used MVC design strategy and with multiple MVCs.  The app will hard code a password upon starting to prevent any user from accessing it until the correct password is entered and the user is authenticated. 
+
+In the first screen, the user will be able to Deposit, Withdraw, and perform a Balance Inquiry operation. These operations will be saved only during the session not across sessions of the ATM application.
+
+If a balance inquiry is executed, the data would show in a label indicating the balance. Also, every operation that you perform will be time-stamped using the current date and time .
+
+In addition to the transactions performed, there will be a button that allows you to open a new screen that has a listing of all the transactions performed during a specific session in a table view. The information included in each table cell will have the date and time of the transaction in a user-friendly format. Upon clicking the cell, a new screen will show up indicating the details of the selected transaction, which includes, type, date and time, and amount if applicable. This third screen will also have a bar item that allows you to perform an add a missing transaction operation which opens a fourth screen, the missing operation is a regular transaction like those mentioned in screen 1. Upon enter the information in the fourth screen, you will return to the listing of transactions (Screen 2) updated by the new missing transaction information. Another button that the third screen will have is a return to the first screen button which pretty much does nothing but take you back to the first original screen, but this time no need to enter the password.
